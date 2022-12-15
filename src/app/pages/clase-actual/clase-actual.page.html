@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Alumno
+      <span>Asistencia</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+
+  <form  [formGroup]="formKey" (ngSubmit)="validateString()">
+    
+    <ion-item class="codigo">
+      <ion-input type="text" class="form-control" formControlName="userKey">Ingrese codigo:</ion-input>
+
+    </ion-item>
+    <input style="margin-top: 15px; margin-left: 15px; background-color: blanchedalmond;" type="submit" value="Iniciar">
+  </form>
+
+
+
+  <ion-tab-button (click)="viewString()">
+    <ion-icon style="font-size: 50px; padding-bottom: 90px; position: absolute;" name="dice-outline"></ion-icon>
+    <ion-label style="font-size: 25px;">Generar</ion-label>
+  </ion-tab-button>
+
+</ion-content>

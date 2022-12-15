@@ -1,0 +1,39 @@
+<ion-content class="bg-color">
+  <ion-card class="ion-no-margin">
+    
+    <ion-card-header>
+      <ion-img src="assets/images/header.png"></ion-img>
+      <ion-card-title>
+        Registro
+      </ion-card-title>
+      <ion-card-subtitle>
+        Complete los sigientes campos
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <form [formGroup]="formReg" (ngSubmit)="onSubmit()" >
+
+        <ion-item>
+          <label class="form-label">Email</label>
+          <ion-input type="text" class="form-control" formControlName="email">
+            <ion-icon name="mail-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <label class="form-label">Contraseña</label>
+          <ion-input type="password" class="form-control" formControlName="password">
+            <ion-icon name="key-outline"></ion-icon>
+          </ion-input>      
+        </ion-item>
+      
+        <input style="margin-top: 15px;" type="submit" value="Registrarse">
+
+        <ion-button style="padding-left: 25px;" size="small" fill="solid" routerLink="/login">Iniciar Sesion</ion-button>
+      
+      </form>    
+    </ion-card-content>
+  </ion-card>
+</ion-content>

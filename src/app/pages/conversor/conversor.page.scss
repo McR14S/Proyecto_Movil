@@ -1,0 +1,36 @@
+
+
+ion-item{
+    color: #74787E;
+    --border-color:#d4d7db;
+    --highlight-color-focused: #647B9d;
+    --padding-start: 0;
+    padding-top: 10px;
+    font-size: 20px;
+    ion-input{
+        color: #647B9d;
+    }
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+    
+  }
+
+ion-card-content{
+    margin-bottom: 1500px;
+}
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-card-subtitle{
+    text-align: center;
+}
+
+#btnConvertir{
+    padding-top: 20px;
+    border-radius: 5px 10px;
+}

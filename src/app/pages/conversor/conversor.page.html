@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Conversor</ion-card-title>
+    <ion-card-subtitle>Consulte el valor de las divisas</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+     
+      <form  [formGroup]="formCalcular" (ngSubmit)="getPrecioUF()">
+    
+        <ion-item>
+          <ion-label position="floating">Ingrese valor de CLP</ion-label>
+          <ion-input type="text" class="form-control" formControlName="valor"></ion-input>
+    
+        </ion-item>
+       
+        <ion-item>
+          <ion-label>UF: ${{getPrecioUF()}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Dolar: ${{getPrecioDolar()}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Euro: ${{getPrecioEuro()}}</ion-label>
+        </ion-item>
+      </form>
+    
+
+    </ion-list>
+    
+  </ion-card-content>
+
+</ion-card>
